@@ -1,0 +1,33 @@
+#header{
+    /* height: 50px; */
+    background-color: slategray;
+    color: cornsilk;
+}
+
+#branding h1 {
+    color: cornsilk;
+
+}
+
+a:link,
+a:visited {
+    color: slategray;
+}
+
+div.breadcrumbs{
+    background: #10284e;
+    color: tan;
+}
+
+.module h2, .module caption, .inline-group h2 {
+    background: #10284e;
+}
+
+.button, input[type=submit], input[type=button], .submit-row input, a.button {
+    background: darkcyan;
+    color: cornsilk;
+}
+
+.object-tools a:link, .object-tools a:visited{
+    background: darkcyan;
+}

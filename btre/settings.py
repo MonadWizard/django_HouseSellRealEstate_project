@@ -134,4 +134,8 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'btre/static')
 ]
 # now run "python manage.py collectstatic"  it collects all static folder in single dir
+# also collect adminPanel's static data
 
+# media folder settings
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL= '/media/'
