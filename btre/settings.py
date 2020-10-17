@@ -41,8 +41,11 @@ INSTALLED_APPS = [
     'pages.apps.PagesConfig',
     'listings.apps.ListingsConfig',
     'realtors.apps.RealtorsConfig',
+    'django.contrib.humanize',
 
 ]
+
+#     'django.contrib.humanize',    for , in price
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
