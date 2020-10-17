@@ -1,1 +1,2 @@
-* complete view all model's data on "pages" app's template (about + index)
+* complete view all element of listings specific product 
+ model's data on "listing"  template

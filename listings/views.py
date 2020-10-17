@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render ,get_object_or_404
 from django.core.paginator import Paginator
 
 
@@ -20,9 +20,11 @@ def index(request):
 
 
 def listing(request, listing_id):
+    # if page not available then show 404
+    listing = get_object_or_404(Listing, pk=listing_id)  # (model,pk)
 
 
-    context = {}
+    context = {'listing':listing}
     template_name = 'listings/listing.html'
     return render(request,template_name, context)
 

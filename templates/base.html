@@ -14,15 +14,17 @@
   <!-- Lightbox -->
   <link rel="stylesheet" href="{% static 'css/lightbox.min.css' %}">
 
+    <!-- Lightbox not working  alternative -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"> -->
+   
 
-    <title>BTRE</title>
+    <title>BTRE{% block title %}{% endblock %</title>
 </head>
 <body>
     {% include 'partials/topbar.html' %} 
 
     {% include 'partials/navbar.html' %} 
 
-<!-- contain  -->
 
     {% block content %}
 
@@ -39,6 +41,7 @@
   <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
   <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
   <script src="{% static 'js/main.js' %}"></script>
+  <script src="{% static 'js/lightbox.min.js' %}"></script>
 
 
 </body>
