@@ -72,6 +72,7 @@ def search(request):
         'bedroom_choices':bedroom_choices,
         'price_choices':price_choices,
         'listings':queryset_list, 
+        'values': request.GET ,
 
     }
     template_name = 'listings/search.html'
