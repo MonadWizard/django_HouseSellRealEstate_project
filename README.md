@@ -1,2 +1,2 @@
-* complete view all element of listings specific product 
- model's data on "listing"  template
+* complete search from index & search templates
+  
