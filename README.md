@@ -1,6 +1,5 @@
-* complete registration by checking 
-    if 2 pasword field marched with requirment
-    if user not exist
-    if mail not used bedore
-* complete login  (change nav bar)
-* complete logout
+* create "contacts" app to take inquire for every listing.
+* complete contact to new model and add data perfectly
+* mail verefication for notify user
+
+### complete inquiry check and send mail from gmail to notify
