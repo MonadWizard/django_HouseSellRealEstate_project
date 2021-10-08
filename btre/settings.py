@@ -87,9 +87,9 @@ WSGI_APPLICATION = 'btre.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'btredb2',
+        'NAME': 'btredb',
         'USER': 'postgres',
-        'PASSWORD': '   ',
+        'PASSWORD': 'root',
         'HOST': 'localhost'
     }
 }
@@ -159,3 +159,8 @@ EMAIL_HOST_USER = 'rcareleess@gmail.com'
 EMAIL_HOST_PASSWORD = '****'
 EMAIL_USE_TLS = True
 
+
+# Default primary key field type
+# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
