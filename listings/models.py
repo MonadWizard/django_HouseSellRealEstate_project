@@ -7,11 +7,24 @@ from realtors.models import Realtor
 # Create your models here.
 
 class Listing(models.Model):
+
+    STATE = [
+        ('Dhaka ', 'Dhaka'),
+        ('Rajshahi', 'Rajshahi'),
+        ('Barisal', 'Barisal'),
+        ('Chittagong', 'Chittagong'),
+        ('Khulna', 'Khulna'),
+        ('Mymensingh', 'Mymensingh'),
+        ('Rangpur', 'Rangpur'),
+        ('Sylhet', 'Sylhet')
+        ]
+
+
     realtor = models.ForeignKey(Realtor, on_delete=models.DO_NOTHING)
     title = models.CharField(max_length=100)
     address = models.CharField(max_length=200)
     city = models.CharField(max_length=100)
-    state = models.CharField(max_length=100)
+    state = models.CharField(choices=STATE, blank=True, max_length=100)
     zipcode = models.CharField(max_length=20)
     description = models.TextField(blank=True)
     price = models.IntegerField()
@@ -32,4 +45,9 @@ class Listing(models.Model):
 
     def __str__(self):
         return self.title
+
+        # delete when file not exist on database.
+    def delete(self, *args, **kwargs):
+        self.file_name.delete()
+        super().delete(*args, **kwargs)
 

@@ -15,5 +15,8 @@ class Contacts(models.Model):
     def __str__(self):
         return self.name
 
+    class Meta:
+        db_table = 'Contacts'
+        verbose_name = "Contact"
 
 
